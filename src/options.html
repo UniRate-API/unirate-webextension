@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="options.css" />
+    <title>UniRate Currency Converter — Settings</title>
+  </head>
+  <body>
+    <main class="card">
+      <h1>UniRate Currency Converter</h1>
+      <p class="lead">
+        This extension uses the free
+        <a href="https://unirateapi.com" target="_blank" rel="noopener noreferrer">UniRate API</a>.
+        Grab a free API key and paste it below — your key is stored only in this
+        browser and is sent only to <code>api.unirateapi.com</code>.
+      </p>
+
+      <form id="settings">
+        <label for="apiKey">API key</label>
+        <input id="apiKey" type="text" spellcheck="false" placeholder="your UniRate API key" />
+        <p class="hint">
+          No key yet?
+          <a href="https://unirateapi.com" target="_blank" rel="noopener noreferrer">Get one free at unirateapi.com →</a>
+        </p>
+
+        <label for="baseUrl">API base URL</label>
+        <input id="baseUrl" type="url" spellcheck="false" placeholder="https://api.unirateapi.com" />
+        <p class="hint">Leave as the default unless you use a self-hosted proxy.</p>
+
+        <div class="actions">
+          <button id="save" class="primary" type="submit">Save</button>
+          <span id="status" class="status" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </main>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

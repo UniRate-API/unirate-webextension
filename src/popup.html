@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>UniRate Currency Converter</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>UniRate</h1>
+      <button id="settings-btn" class="icon-btn" type="button" title="Settings" aria-label="Settings">⚙</button>
+    </header>
+
+    <main>
+      <div id="setup" class="notice hidden">
+        <p>Add your free UniRate API key to start converting.</p>
+        <button id="setup-btn" class="primary" type="button">Add API key</button>
+      </div>
+
+      <form id="converter" class="converter hidden" autocomplete="off">
+        <div class="row">
+          <label for="amount">Amount</label>
+          <input id="amount" type="number" inputmode="decimal" min="0" step="any" value="1" />
+        </div>
+
+        <div class="row pair">
+          <div class="field">
+            <label for="from">From</label>
+            <select id="from"></select>
+          </div>
+          <button id="swap" class="icon-btn swap" type="button" title="Swap" aria-label="Swap currencies">⇄</button>
+          <div class="field">
+            <label for="to">To</label>
+            <select id="to"></select>
+          </div>
+        </div>
+
+        <button id="convert" class="primary" type="submit">Convert</button>
+
+        <output id="result" class="result" aria-live="polite"></output>
+        <p id="status" class="status" role="status"></p>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <a href="https://unirateapi.com" target="_blank" rel="noopener noreferrer">unirateapi.com</a>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

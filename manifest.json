@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "UniRate Currency Converter",
+  "version": "0.1.0",
+  "description": "Convert currencies and look up live exchange rates & VAT rates from your toolbar, powered by the free UniRate API.",
+  "homepage_url": "https://unirateapi.com",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "UniRate Currency Converter",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.unirateapi.com/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "unirate-currency-converter@unirateapi.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}

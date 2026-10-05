@@ -1,0 +1,38 @@
+{
+  "name": "unirate-webextension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "UniRate Currency Converter — a zero-dependency browser extension (Firefox, Chrome, Edge) for live currency conversion, exchange rates, and VAT rates via the free UniRate API.",
+  "keywords": [
+    "unirate",
+    "currency",
+    "converter",
+    "exchange-rate",
+    "forex",
+    "vat",
+    "webextension",
+    "firefox",
+    "chrome",
+    "edge"
+  ],
+  "license": "MIT",
+  "author": "UniRate-API",
+  "homepage": "https://unirateapi.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniRate-API/unirate-webextension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UniRate-API/unirate-webextension/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "icons": "node tools/make-icons.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
