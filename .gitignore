@@ -3,3 +3,4 @@ node_modules/
 *.xpi
 web-ext-artifacts/
 .DS_Store
+_promo-*.html
